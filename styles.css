@@ -23,6 +23,9 @@ tr:nth-child(even) {
   background-color: #F7971E;
 }
 
+tr:nth-child(odd) {
+  background-color:   #ffc301;
+}
 h1 {
     width:100%;
     text-align: center;
