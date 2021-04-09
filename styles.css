@@ -10,7 +10,7 @@ body {
 table {
   font-family: helvetica;
   border-collapse: collapse;
-  width: 100%;
+  width: 80vw;
 }
 
 td, th {
