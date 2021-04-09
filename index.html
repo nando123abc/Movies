@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Is It Nando's Birthday?</title>
+    <link href="{%static 'BirthdayWebCheck/BirthdayWebCheck/static/birthday/styles.css'%}" rel="stylesheet">
+</head>
+
+<body>
+    <div class=container>
+        <header>
+            <h1 data-text={% if birthday %} "YES!" {% else %} "NO!" {% endif %}>
+                {% if birthday %}
+                YES!
+                {% else %}
+                NO!
+                {% endif %}
+            </h1>
+
+            <h2 data-text={% if birthday %} "\(^.^)/" {% else %} "\(v.v)/" {% endif %}>
+                {% if birthday %}
+                \(^.^)/
+                {% else %}
+                \(v.v)/
+                {% endif %}
+            </h2>
+        </header>
+    </div>
+</body>
+
+</html>
