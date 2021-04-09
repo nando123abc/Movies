@@ -1,4 +1,4 @@
-## Welcome to Github Movie Seleciton
+## Welcome to Movies
 
 Simple webpage to store movie information. 
 
