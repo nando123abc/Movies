@@ -8,19 +8,19 @@ body {
     background: linear-gradient(to right, #FFC300, #ffbe33, #ffa000   ); }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: helvetica;
   border-collapse: collapse;
   width: 100%;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #000;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #39508b30;
 }
 
 h1 {
