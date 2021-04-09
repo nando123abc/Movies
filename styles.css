@@ -7,6 +7,21 @@ body {
     background-color: #141E30;
     background: linear-gradient(to right, #FFC300, #ffbe33, #ffa000   ); }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 h1 {
     width:100%;
