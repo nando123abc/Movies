@@ -94,7 +94,7 @@ h2 {
   text-shadow: 0 0 20px #952;
   font-weight: 900;
 }
-.fa-thumbs-o-up:before{
+.fa-signal:before{
   content: "\f012";
   color: #fe7;
   text-shadow: 0 0 20px #952;
