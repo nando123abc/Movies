@@ -36,15 +36,3 @@ function ApiLoaded(data){
     document.querySelector("#row").innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+"></td>";
   }
 }
-
-Promise.all([
-  fetch(url1).then(value => value.json()),
-  fetch(url2).then(value => value.json())
-  ])
-  .then((value) => {
-     console.log(value)
-    //json response
-  })
-  .catch((err) => {
-      console.log(err);
-  });
