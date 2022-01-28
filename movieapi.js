@@ -29,10 +29,10 @@ function ApiLoaded(data){
     row.setAttribute('class', 'row'+i);
     row.setAttribute('id', 'row'+i);
     document.querySelector("#MainTable").appendChild(row);
+    document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+" height=250px></td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].original_title+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].overview+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].vote_average+"</td>";
-    document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+"></td>";
   }
 }
