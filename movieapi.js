@@ -101,7 +101,8 @@ function ApiLoaded(data){
 }
 
 function ApiLoadedWatch(data){
-  
+  console.log('watch here')
+  console.log(data);
   for (var i = 0; i <= data.length-1; i++){
     document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].US.flatrate[0].logo_path+" alt="+data[i].US.flatrate[0].provider_name+" height=250px></td>"; 
 
