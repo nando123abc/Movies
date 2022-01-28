@@ -73,7 +73,7 @@ function ApiLoaded(data){
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].title+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> \""+data[i].tagline+"\"<br><br>Description: " +data[i].overview+"</td>";
-    document.querySelector("#row"+i).innerHTML += "<td> <div class='fas fa-star'></div> Rating:<br> " +data[i].vote_average+" <br> <div class='fas fa-users'></div> Voters:<br> "+data[i].vote_count+"<br> <div class='fas fa-signal'></div> Popularity:<br> "+data[i].popularity+"</td>";
+    document.querySelector("#row"+i).innerHTML += "<td> <div class='fas fa-star'></div> Rating: " +data[i].vote_average+" <br> <div class='fas fa-users'></div> Voters: "+data[i].vote_count+"<br> <div class='fas fa-signal'></div> Popularity: "+data[i].popularity+"</td>";
 
   }
 }
