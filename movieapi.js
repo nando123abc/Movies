@@ -14,26 +14,27 @@ Promise.all([
   ])
   .then((value) => {
      console.log(value)
+     ApiLoaded(data);
     //json response
   })
   .catch((err) => {
       console.log(err);
   });
-
-// ApiLoaded(data);
 }
 
 function ApiLoaded(data){
-  var row = document.createElement('tr');
-  row.setAttribute('class', 'row');
-  row.setAttribute('id', 'row');
-  document.querySelector("#MainTable").appendChild(row);
-  document.querySelector("#row").innerHTML += "<td> "+data.original_title+"</td>";
-  document.querySelector("#row").innerHTML += "<td> "+data.release_date+"</td>";
-  document.querySelector("#row").innerHTML += "<td> "+data.overview+"</td>";
-  document.querySelector("#row").innerHTML += "<td> "+data.vote_average+"</td>";
-  document.querySelector("#row").innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data.poster_path+" alt="+data.original_title+"></td>";
-  console.log(data);
+  
+  for (var i = 0; i <= data.length-1; i++){
+    var row = document.createElement('tr');
+    row.setAttribute('class', 'row');
+    row.setAttribute('id', 'row');
+    document.querySelector("#MainTable").appendChild(row);
+    document.querySelector("#row").innerHTML += "<td> "+data[i].original_title+"</td>";
+    document.querySelector("#row").innerHTML += "<td> "+data[i].release_date+"</td>";
+    document.querySelector("#row").innerHTML += "<td> "+data[i].overview+"</td>";
+    document.querySelector("#row").innerHTML += "<td> "+data[i].vote_average+"</td>";
+    document.querySelector("#row").innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+"></td>";
+  }
 }
 
 Promise.all([
