@@ -35,7 +35,6 @@ let url26='https://api.themoviedb.org/3/movie/542178?api_key='+apikey;//The Frec
 
 Promise.all([
   fetch(url1).then(value => value.json()),
-  fetch(url1watch).then(value => value.json()),
   fetch(url2).then(value => value.json()),
   fetch(url3).then(value => value.json()),
   fetch(url4).then(value => value.json()),
@@ -70,6 +69,19 @@ Promise.all([
   .catch((err) => {
       console.log(err);
   });
+
+Promise.all([
+  fetch(url1watch).then(value => value.json())
+  ])
+  .then((value) => {
+     console.log(value)
+     ApiLoadedWatch(value);
+    //json response
+  })
+  .catch((err) => {
+      console.log(err);
+  });
+
 }
 
 function ApiLoaded(data){
@@ -84,6 +96,14 @@ function ApiLoaded(data){
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date.substring(0, 4)+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> \""+data[i].tagline+"\"<br><br>Description: " +data[i].overview+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> <div class='fas fa-star'></div> Rating: " +data[i].vote_average+" <br> <div class='fas fa-users'></div> Voters: "+data[i].vote_count+"<br> <div class='fas fa-signal'></div> Popularity: "+data[i].popularity+"</td>";
+
+  }
+}
+
+function ApiLoadedWatch(data){
+  
+  for (var i = 0; i <= data.length-1; i++){
+    document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].US.flatrate[0].logo_path+" alt="+data[i].US.flatrate[0].provider_name+" height=250px></td>"; 
 
   }
 }
