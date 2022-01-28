@@ -9,9 +9,6 @@ ApiLoaded(data);
 }
 
 function ApiLoaded(data){
-  
-  document.querySelector("#MainTable").innerHTML += data.original_title;
-  
   var row = document.createElement('tr');
   row.setAttribute('class', 'row');
   row.setAttribute('id', 'row');
@@ -20,6 +17,6 @@ function ApiLoaded(data){
   document.querySelector("#row").innerHTML += "<td> "+data.release_date+"</td>";
   document.querySelector("#row").innerHTML += "<td> "+data.overview+"</td>";
   document.querySelector("#row").innerHTML += "<td> "+data.vote_average+"</td>";
-  document.querySelector("#row").innerHTML += "<img src=https://image.tmdb.org/t/p/w500"+data.poster_path+" alt="+data.original_title+">";
+  document.querySelector("#row").innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data.poster_path+" alt="+data.original_title+"></td>";
   console.log(data);
 }
