@@ -27,6 +27,9 @@ let url19='https://api.themoviedb.org/3/movie/598?api_key='+apikey;//City of God
 let url20='https://api.themoviedb.org/3/movie/290098?api_key='+apikey;//The Handmaiden
 let url21='https://api.themoviedb.org/3/movie/7345?api_key='+apikey;//There Will Be Blood
 let url22='https://api.themoviedb.org/3/movie/14337?api_key='+apikey;//Primer
+let url23='https://api.themoviedb.org/3/movie/763329?api_key='+apikey;//Red Rocket
+let url24='https://api.themoviedb.org/3/movie/572151?api_key='+apikey;//Zombie for Sale
+let url25='https://api.themoviedb.org/3/movie/600?api_key='+apikey;//Full Metal Jacket
 
 Promise.all([
   fetch(url1).then(value => value.json()),
@@ -50,7 +53,10 @@ Promise.all([
   fetch(url19).then(value => value.json()),
   fetch(url20).then(value => value.json()),
   fetch(url21).then(value => value.json()),
-  fetch(url22).then(value => value.json())
+  fetch(url22).then(value => value.json()),
+  fetch(url23).then(value => value.json()),
+  fetch(url24).then(value => value.json()),
+  fetch(url25).then(value => value.json())
   ])
   .then((value) => {
      console.log(value)
