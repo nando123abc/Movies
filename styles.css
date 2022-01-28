@@ -82,7 +82,19 @@ h2 {
     height: 100%;
 }
 
-.fa-star::before{
+.fa-star:before{
+  content: "\f005";
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+  font-weight: 900;
+}
+.fa-users:before{
+  content: "\f005";
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+  font-weight: 900;
+}
+.fa-thumbs-o-up:before{
   content: "\f005";
   color: #fe7;
   text-shadow: 0 0 20px #952;
