@@ -6,6 +6,7 @@ let apikey = '37093d94a7918a4064e5b65bc9524875';
 // let data = await response.json();
 
 let url1='https://api.themoviedb.org/3/movie/3116?api_key='+apikey;//midnight cowboy
+let url1watch='https://api.themoviedb.org/3/movie/3116/watch/providers?api_key=?api_key='+apikey;//midnight cowboy
 let url2='https://api.themoviedb.org/3/movie/550?api_key='+apikey;//fight clubsaving
 let url3='https://api.themoviedb.org/3/movie/857?api_key='+apikey;//Saving Private Ryan
 let url4='https://api.themoviedb.org/3/movie/157336?api_key='+apikey;//Interstellar
@@ -34,6 +35,7 @@ let url26='https://api.themoviedb.org/3/movie/542178?api_key='+apikey;//The Frec
 
 Promise.all([
   fetch(url1).then(value => value.json()),
+  fetch(url1watch).then(value => value.json()),
   fetch(url2).then(value => value.json()),
   fetch(url3).then(value => value.json()),
   fetch(url4).then(value => value.json()),
