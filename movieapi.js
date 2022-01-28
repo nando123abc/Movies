@@ -1,3 +1,5 @@
+console.log('Hello');
+
 let apikey = '37093d94a7918a4064e5b65bc9524875';
 let requestURL = 'https://api.themoviedb.org/3/movie/550?api_key='+apikey;
 let request = new XMLHttpRequest();
