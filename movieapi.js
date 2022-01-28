@@ -1,4 +1,4 @@
-console.log('Hello');
+console.log('Hello Updated v1.0');
 sendAPIRequest();
 async function sendAPIRequest(){
 let apikey = '37093d94a7918a4064e5b65bc9524875';
