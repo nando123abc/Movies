@@ -30,6 +30,7 @@ let url22='https://api.themoviedb.org/3/movie/14337?api_key='+apikey;//Primer
 let url23='https://api.themoviedb.org/3/movie/763329?api_key='+apikey;//Red Rocket
 let url24='https://api.themoviedb.org/3/movie/572151?api_key='+apikey;//Zombie for Sale
 let url25='https://api.themoviedb.org/3/movie/600?api_key='+apikey;//Full Metal Jacket
+let url26='https://api.themoviedb.org/3/movie/542178?api_key='+apikey;//The Frecnh Dispatch
 
 Promise.all([
   fetch(url1).then(value => value.json()),
@@ -56,7 +57,8 @@ Promise.all([
   fetch(url22).then(value => value.json()),
   fetch(url23).then(value => value.json()),
   fetch(url24).then(value => value.json()),
-  fetch(url25).then(value => value.json())
+  fetch(url25).then(value => value.json()),
+  fetch(url26).then(value => value.json())
   ])
   .then((value) => {
      console.log(value)
