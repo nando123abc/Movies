@@ -79,7 +79,7 @@ function ApiLoaded(data){
     document.querySelector("#MainTable").appendChild(row);
     document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+" height=250px></td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].title+"</td>";
-    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date+"</td>";
+    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date.substring(0, 4)+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> \""+data[i].tagline+"\"<br><br>Description: " +data[i].overview+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> <div class='fas fa-star'></div> Rating: " +data[i].vote_average+" <br> <div class='fas fa-users'></div> Voters: "+data[i].vote_count+"<br> <div class='fas fa-signal'></div> Popularity: "+data[i].popularity+"</td>";
 
