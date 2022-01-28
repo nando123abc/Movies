@@ -38,7 +38,7 @@ Promise.all([
   fetch(url7).then(value => value.json()),
   fetch(url8).then(value => value.json()),
   fetch(url9).then(value => value.json()),
-  fetch(url0).then(value => value.json()),
+  fetch(url10).then(value => value.json()),
   fetch(url11).then(value => value.json()),
   fetch(url12).then(value => value.json()),
   fetch(url13).then(value => value.json()),
@@ -50,7 +50,7 @@ Promise.all([
   fetch(url19).then(value => value.json()),
   fetch(url20).then(value => value.json()),
   fetch(url21).then(value => value.json()),
-  fetch(ur22).then(value => value.json())
+  fetch(url22).then(value => value.json())
   ])
   .then((value) => {
      console.log(value)
