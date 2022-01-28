@@ -16,10 +16,10 @@ function ApiLoaded(data){
   row.setAttribute('class', 'row');
   row.setAttribute('id', 'row');
   document.querySelector("#MainTable").appendChild(row);
-  document.querySelector("#row").innerHTML += "<th> "+data.original_title+"</th>";
-  document.querySelector("#row").innerHTML += "<th> "+data.release_date+"</th>";
-  document.querySelector("#row").innerHTML += "<th> "+data.overview+"</th>";
-  document.querySelector("#row").innerHTML += "<th> "+data.vote_average+"</th>";
-  document.querySelector("#row").innerHTML += "<th> <img src=https://image.tmdb.org/t/p/w500"+data.poster_path+" alt="+data.original_title+"></th>";
+  document.querySelector("#row").innerHTML += "<td> "+data.original_title+"</td>";
+  document.querySelector("#row").innerHTML += "<td> "+data.release_date+"</td>";
+  document.querySelector("#row").innerHTML += "<td> "+data.overview+"</td>";
+  document.querySelector("#row").innerHTML += "<td> "+data.vote_average+"</td>";
+  document.querySelector("#row").innerHTML += "<img src=https://image.tmdb.org/t/p/w500"+data.poster_path+" alt="+data.original_title+">";
   console.log(data);
 }
