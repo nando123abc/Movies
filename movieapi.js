@@ -2,7 +2,7 @@ console.log('Hello');
 sendAPIRequest();
 async function sendAPIRequest(){
 let apikey = '37093d94a7918a4064e5b65bc9524875';
-let response = await fetch('https://api.themoviedb.org/3116/movie/550?api_key='+apikey);
+let response = await fetch('https://api.themoviedb.org/3/movie/3116?api_key='+apikey);
 let data = await response.json();
 
 ApiLoaded(data);
