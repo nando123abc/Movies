@@ -11,7 +11,7 @@ table {
     z-index: 1000;
   font-family: helvetica;
   border-collapse: collapse;
-  width: 80vw;
+  width: 95vw;
 }
 
 td, th {
@@ -89,13 +89,13 @@ h2 {
   font-weight: 900;
 }
 .fa-users:before{
-  content: "\f005";
+  content: "\f0c0";
   color: #fe7;
   text-shadow: 0 0 20px #952;
   font-weight: 900;
 }
 .fa-thumbs-o-up:before{
-  content: "\f005";
+  content: "\f087";
   color: #fe7;
   text-shadow: 0 0 20px #952;
   font-weight: 900;
