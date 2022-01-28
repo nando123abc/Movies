@@ -14,13 +14,13 @@ let url6='https://api.themoviedb.org/3/movie/324857?api_key='+apikey;//Spider-Ma
 let url7='https://api.themoviedb.org/3/movie/13398?api_key='+apikey;//Tokyo Godfathers
 let url8='https://api.themoviedb.org/3/movie/698296?api_key='+apikey;//Spirited Away
 let url9='https://api.themoviedb.org/3/movie/530915?api_key='+apikey;//1917
-let url10='https://api.themoviedb.org/3/movie/86976?api_key='+apikey;//Perfect Blue
+let url10='https://api.themoviedb.org/3/movie/10494?api_key='+apikey;//Perfect Blue
 let url11='https://api.themoviedb.org/3/movie/76341?api_key='+apikey;//Mad Max:Fury Road
 let url12='https://api.themoviedb.org/3/movie/1949?api_key='+apikey;//Zodiac
 let url13='https://api.themoviedb.org/3/movie/24?api_key='+apikey;//Kill Bill Vol.1 & 2
 let url14='https://api.themoviedb.org/3/movie/335984?api_key='+apikey;//Blade Runner 2049
 let url15='https://api.themoviedb.org/3/movie/4512?api_key='+apikey;//The Assassination of Jesse James by the Coward Robert Ford
-let url16='https://api.themoviedb.org/3/movie/48311?api_key='+apikey;//Parasite
+let url16='https://api.themoviedb.org/3/movie/496243?api_key='+apikey;//Parasite
 let url17='https://api.themoviedb.org/3/movie/505192?api_key='+apikey;//Shoplifters
 let url18='https://api.themoviedb.org/3/movie/406?api_key='+apikey;//La haine
 let url19='https://api.themoviedb.org/3/movie/598?api_key='+apikey;//City of God
@@ -70,9 +70,9 @@ function ApiLoaded(data){
     row.setAttribute('id', 'row'+i);
     document.querySelector("#MainTable").appendChild(row);
     document.querySelector("#row"+i).innerHTML += "<td> <img src=https://image.tmdb.org/t/p/w500"+data[i].poster_path+" alt="+data[i].original_title+" height=250px></td>";
-    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].original_title+"</td>";
+    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].title+"</td>";
     document.querySelector("#row"+i).innerHTML += "<td> "+data[i].release_date+"</td>";
-    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].overview+"</td>";
-    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].vote_average+"</td>";
+    document.querySelector("#row"+i).innerHTML += "<td> "+data[i].tagline+"<br><br>Description:" +data[i].overview+"</td>";
+    document.querySelector("#row"+i).innerHTML += "<td> Rating:" +data[i].vote_average+" <br>Voters:"+data[i].vote_count+"<br>Popularity:"+data[i].popularity+"</td>";
   }
 }
