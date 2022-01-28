@@ -14,7 +14,7 @@ Promise.all([
   ])
   .then((value) => {
      console.log(value)
-     ApiLoaded(data);
+     ApiLoaded(value);
     //json response
   })
   .catch((err) => {
